@@ -12,12 +12,12 @@ export default {
       sourcemap: true,
     },
     {
-      file: "./dist/index.esm.js", // 输出文件路径
+      file: "./dist/esm/index.esm.js", // 输出文件路径
       format: "esm",
       sourcemap: true,
     },
     {
-      file: "./dist/index.umd.js", // 输出文件路径
+      file: "./dist/umd/index.umd.js", // 输出文件路径
       name: "JurenHelpers",
       format: "umd",
       sourcemap: true,

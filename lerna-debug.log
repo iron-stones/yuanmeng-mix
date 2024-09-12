@@ -1,0 +1,105 @@
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   'force-publish': '*',
+0 silly argv   forcePublish: '*',
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '8.1.8',
+0 silly argv   '$0': 'C:\\Program Files\\nodejs\\node_modules\\lerna\\dist\\cli.js'
+0 silly argv }
+1 notice cli v8.1.8
+2 verbose packageConfigs Package manager "pnpm" detected. Resolving packages using `pnpm-workspace.yaml`.
+3 verbose rootPath D:\a\yuanmeng\yuanmeng-mix
+4 info versioning independent
+5 verbose session 53edaf860cacc31d
+6 verbose user-agent lerna/8.1.8/node@v20.16.0+x64 (win32)
+7 silly argv {
+7 silly argv   _: [ 'publish' ],
+7 silly argv   'force-publish': '*',
+7 silly argv   forcePublish: '*',
+7 silly argv   composed: 'publish',
+7 silly argv   lernaVersion: '8.1.8'
+7 silly argv }
+8 verbose packageConfigs Package manager "pnpm" detected. Resolving packages using `pnpm-workspace.yaml`.
+9 verbose rootPath D:\a\yuanmeng\yuanmeng-mix
+10 silly isAnythingCommitted
+11 verbose isAnythingCommitted 1
+12 silly getCurrentBranch
+13 verbose currentBranch main
+14 silly remoteBranchExists
+15 silly isBehindUpstream
+16 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 0
+17 silly hasTags
+18 verbose hasTags true
+19 silly git-describe.sync "@juren/helpers@1.0.12-0-g468c8b9-dirty" => {"lastTagName":"@juren/helpers@1.0.12","lastVersion":"1.0.12","refCount":"0","sha":"468c8b9","isDirty":true}
+20 warn force-publish all packages
+21 info Assuming all packages changed
+22 verbose updated @juren/helpers
+23 info execute Skipping releases
+24 silly lifecycle No script for "preversion" in "juren-mix", continuing
+25 silly lifecycle No script for "preversion" in "@juren/helpers", continuing
+26 verbose version @juren/helpers has no lockfile. Skipping lockfile update.
+27 silly lifecycle No script for "version" in "@juren/helpers", continuing
+28 silly lifecycle No script for "version" in "juren-mix", continuing
+29 verbose version Updating root pnpm-lock.yaml
+30 silly gitAdd [ 'packages/helpers/package.json', 'pnpm-lock.yaml' ]
+31 silly gitCommit Publish
+31 silly gitCommit
+31 silly gitCommit  - @juren/helpers@1.0.13
+32 verbose git [
+32 verbose git   'commit',
+32 verbose git   '-F',
+32 verbose git   'C:\\Users\\aaamr\\AppData\\Local\\Temp\\1af52592-be21-4d55-8b98-78678be2b38a\\lerna-commit.txt'
+32 verbose git ]
+33 silly gitTag @juren/helpers@1.0.13 git tag %s -m %s
+34 verbose git [ 'tag', '@juren/helpers@1.0.13', '-m', '@juren/helpers@1.0.13' ]
+35 silly lifecycle No script for "postversion" in "@juren/helpers", continuing
+36 silly lifecycle No script for "postversion" in "juren-mix", continuing
+37 info git Pushing tags...
+38 silly gitPush origin main
+39 info publish Publishing packages to npm...
+40 silly getCurrentSHA
+41 verbose getCurrentSHA 0b747e689fdccdbbc063baa54b8266c9569f29d9
+42 silly lifecycle No script for "prepublish" in "juren-mix", continuing
+43 silly lifecycle No script for "prepare" in "juren-mix", continuing
+44 silly lifecycle No script for "prepublishOnly" in "juren-mix", continuing
+45 silly lifecycle No script for "prepack" in "juren-mix", continuing
+46 verbose pack-directory packages\helpers
+47 silly lifecycle No script for "prepublish" in "@juren/helpers", continuing
+48 silly lifecycle No script for "prepare" in "@juren/helpers", continuing
+49 silly lifecycle No script for "prepublishOnly" in "@juren/helpers", continuing
+50 silly lifecycle No script for "prepack" in "@juren/helpers", continuing
+51 silly lifecycle No script for "postpack" in "@juren/helpers", continuing
+52 verbose packed packages\helpers
+53 silly lifecycle No script for "postpack" in "juren-mix", continuing
+54 verbose publish @juren/helpers
+55 silly FetchError: request to https://registry.npmjs.org/@juren%2fhelpers failed, reason: read ECONNRESET
+55 silly     at ClientRequest.<anonymous> (D:\a\yuanmeng\yuanmeng-mix\node_modules\.pnpm\minipass-fetch@3.0.5\node_modules\minipass-fetch\lib\index.js:130:14)
+55 silly     at ClientRequest.emit (node:events:519:28)
+55 silly     at TLSSocket.socketErrorListener (node:_http_client:500:9)
+55 silly     at TLSSocket.emit (node:events:519:28)
+55 silly     at emitErrorNT (node:internal/streams/destroy:169:8)
+55 silly     at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+55 silly     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+55 silly  FetchError: request to https://registry.npmjs.org/@juren%2fhelpers failed, reason: read ECONNRESET
+55 silly     at ClientRequest.<anonymous> (D:\a\yuanmeng\yuanmeng-mix\node_modules\.pnpm\minipass-fetch@3.0.5\node_modules\minipass-fetch\lib\index.js:130:14)
+55 silly     at ClientRequest.emit (node:events:519:28)
+55 silly     at TLSSocket.socketErrorListener (node:_http_client:500:9)
+55 silly     at TLSSocket.emit (node:events:519:28)
+55 silly     at emitErrorNT (node:internal/streams/destroy:169:8)
+55 silly     at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+55 silly     at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+55 silly   code: 'ECONNRESET',
+55 silly   errno: 'ECONNRESET',
+55 silly   syscall: 'read',
+55 silly   type: 'system'
+55 silly }
+56 warn notice Package failed to publish: @juren/helpers
+57 error ECONNRESET request to https://registry.npmjs.org/@juren%2fhelpers failed, reason: read ECONNRESET
+58 error errno "ECONNRESET" is not a valid exit code - exiting with code 1
+59 error FetchError: request to https://registry.npmjs.org/@juren%2fhelpers failed, reason: read ECONNRESET
+59 error     at ClientRequest.<anonymous> (D:\a\yuanmeng\yuanmeng-mix\node_modules\.pnpm\minipass-fetch@3.0.5\node_modules\minipass-fetch\lib\index.js:130:14)
+59 error     at ClientRequest.emit (node:events:519:28)
+59 error     at TLSSocket.socketErrorListener (node:_http_client:500:9)
+59 error     at TLSSocket.emit (node:events:519:28)
+59 error     at emitErrorNT (node:internal/streams/destroy:169:8)
+59 error     at emitErrorCloseNT (node:internal/streams/destroy:128:3)

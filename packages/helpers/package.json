@@ -3,8 +3,9 @@
   "version": "1.0.13",
   "description": "通用工具",
   "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "browser": "dist/index.umd.js",
+  "module": "dist/esm/index.esm.js",
+  "browser": "dist/umd/index.umd.js",
+  "types": "dist/types/index.d.ts",
   "scripts": {
     "build": "rimraf ./dist && rollup -c ./rollup.config.js"
   },
@@ -28,6 +29,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "468c8b920242d0107f69698ecbd425701b80f6f1",
+  "gitHead": "0b747e689fdccdbbc063baa54b8266c9569f29d9",
   "sideEffect": false
 }
