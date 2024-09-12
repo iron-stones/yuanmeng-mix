@@ -2,10 +2,10 @@
   "name": "@juren/helpers",
   "version": "1.0.14",
   "description": "通用工具",
-  "main": "dist/index.js",
-  "module": "dist/esm/index.esm.js",
-  "browser": "dist/umd/index.umd.js",
-  "types": "dist/types/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/esm/index.esm.js",
+  "browser": "./dist/umd/index.umd.js",
+  "types": "./dist/types/index.d.ts",
   "scripts": {
     "build": "rimraf ./dist && rollup -c ./rollup.config.js"
   },
@@ -29,6 +29,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "0b747e689fdccdbbc063baa54b8266c9569f29d9",
+  "gitHead": "cc8a0e159a1ecfdd11288c4776dd3ae1a5d12bb1",
   "sideEffect": false
 }
