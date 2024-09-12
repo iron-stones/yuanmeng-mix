@@ -1,6 +1,6 @@
 {
   "name": "@yuanmeng/helpers",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "通用工具",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -18,5 +18,5 @@
     "typescript": "^5.6.2"
   },
   "private": false,
-  "gitHead": "4d085dcb52b19e6bde7b53cacdc7cfaa8846d330"
+  "gitHead": "d116b60d0f81a8828a12eaf3a13bacb313ce81d0"
 }
