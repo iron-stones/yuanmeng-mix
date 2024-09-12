@@ -4,7 +4,6 @@
   "description": "通用工具",
   "main": "./dist/index.js",
   "module": "./dist/esm/index.esm.js",
-  "browser": "./dist/umd/index.umd.js",
   "types": "./dist/types/index.d.ts",
   "scripts": {
     "build": "rimraf ./dist && rollup -c ./rollup.config.js"
