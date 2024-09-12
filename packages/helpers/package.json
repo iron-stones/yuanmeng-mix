@@ -17,5 +17,6 @@
     "@types/node": "^22.5.4",
     "typescript": "^5.6.2"
   },
-  "gitHead": "c6f8623853f3a9712c76f6e997bbf93977d9c316"
+  "private": false,
+  "gitHead": "4d085dcb52b19e6bde7b53cacdc7cfaa8846d330"
 }
