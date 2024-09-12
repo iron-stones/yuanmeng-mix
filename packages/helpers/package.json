@@ -1,6 +1,6 @@
 {
   "name": "@juren/helpers",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "通用工具",
   "main": "./dist/index.js",
   "module": "./dist/esm/index.esm.js",
@@ -29,6 +29,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "cc8a0e159a1ecfdd11288c4776dd3ae1a5d12bb1",
+  "gitHead": "ba9a68b67cd6f523f201691ba17520d6f3a134a1",
   "sideEffect": false
 }
