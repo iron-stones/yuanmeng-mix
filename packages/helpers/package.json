@@ -1,6 +1,6 @@
 {
   "name": "@juren/helpers",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "通用工具",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
