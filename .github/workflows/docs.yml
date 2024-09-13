@@ -28,10 +28,6 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Find all docs directories
-        id: find_docs
-        run: echo "DOCS_PATH=$(find packages -type d -name docs | tr '\n' ' ')" >> $GITHUB_ENV
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -59,7 +55,7 @@ jobs:
             -d '{
               "msg_type": "text",
               "content": {
-                "text": "文档更新 '"$status"'! \n项目: ${{ github.repository }}\n'"$message"'"
+                "text": "文档更新 '"$status"'! \n项目: ${{ github.repository }}\n'"$message"'\n提交信息: ${{ github.event.head_commit.message }}\n"
               }
             }' \
             ${{ secrets.FEISHU_DOCS_ROBOT_URL }}
