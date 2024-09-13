@@ -6,7 +6,8 @@
   "module": "./dist/esm/index.esm.js",
   "types": "./dist/types/index.d.ts",
   "scripts": {
-    "build": "rimraf ./dist && rollup -c ./rollup.config.js && npx typedoc"
+    "build": "rimraf ./dist && rollup -c ./rollup.config.js && npx typedoc",
+    "test": "jest"
   },
   "files": [
     "dist"
