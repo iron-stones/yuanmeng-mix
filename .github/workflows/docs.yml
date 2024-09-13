@@ -37,6 +37,10 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
+      - name: Print commit message
+        run: |
+          echo "Commit message: ${{ github.event.head_commit.message }}"
+
       # 发送部署状态到飞书
       - name: Send Feishu Message
         if: always()
