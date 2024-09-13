@@ -49,7 +49,7 @@ jobs:
         run: |
           if [ "$DEPLOY_STATUS" = "success" ]; then
             status="✅ 成功"
-            message="部署 URL: ${{ steps.deployment.outputs.page_url }}"
+            message="文档 URL: ${{ steps.deployment.outputs.page_url }}"
           else
             status="❌ 失败"
             message="请检查 Actions 日志以获取更多信息: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
@@ -59,7 +59,7 @@ jobs:
             -d '{
               "msg_type": "text",
               "content": {
-                "text": "文档更新 '"$status"'! \n项目: ${{ github.repository }}"
+                "text": "文档更新 '"$status"'! \n项目: ${{ github.repository }}\n提交信息: ${{ github.event.head_commit.message }}\n'"$message"'"
               }
             }' \
             ${{ secrets.FEISHU_DOCS_ROBOT_URL }}
