@@ -16,12 +16,12 @@ export default {
       format: "esm",
       sourcemap: true,
     },
-    {
-      file: "./dist/umd/index.umd.js", // 输出文件路径
-      name: "JurenHelpers",
-      format: "umd",
-      sourcemap: true,
-    },
+    // {
+    //   file: "./dist/umd/index.umd.js", // 输出文件路径
+    //   name: "JurenHelpers",
+    //   format: "umd",
+    //   sourcemap: true,
+    // },
   ],
   plugins: [
     resolve(), // 解析 node_modules 中的模块
