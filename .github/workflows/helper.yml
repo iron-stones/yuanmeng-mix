@@ -1,10 +1,10 @@
-name: helpers docs CI
+name: Docs CI
 
 on:
   push:
     branches: ["main"]
     paths:
-      - "packages/*/docs/**"
+      - "docs"
 
 permissions:
   contents: read
@@ -35,7 +35,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{ env.DOCS_PATH }}
+          path: docs
 
       - name: Deploy to GitHub Pages
         id: deployment
@@ -59,7 +59,7 @@ jobs:
             -d '{
               "msg_type": "text",
               "content": {
-                "text": "monitor page 部署 '"$status"'！\n项目: ${{ github.repository }}\n分支: ${{ github.ref }}\n提交信息: ${{ github.event.head_commit.message }}\n'"$message"'"
+                "text": "文档更新 '"$status"'！\n项目: ${{ github.repository }}\n分支: ${{ github.ref }}\n提交信息: ${{ github.event.head_commit.message }}\n'"$message"'"
               }
             }' \
-            ${{ secrets.FEISHU_DEPLOY_ROBOT_URL }}
+            ${{ secrets.FEISHU_DOCS_ROBOT_URL }}
