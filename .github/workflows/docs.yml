@@ -59,7 +59,7 @@ jobs:
             -d '{
               "msg_type": "text",
               "content": {
-                "text": "文档更新"
+                "text": "文档更新 '"$status"'! \n项目: ${{ github.repository }}"
               }
             }' \
             ${{ secrets.FEISHU_DOCS_ROBOT_URL }}
