@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepare": "npx typedoc && git add . && git commit -m 'docs: update docs'",
+    "prepare": "npx typedoc && git add . && git commit -m \"docs: update docs\"",
     "build": "pnpm -r run build",
     "test": "pnpm -r run test",
     "lint": "pnpm -r run lint"
