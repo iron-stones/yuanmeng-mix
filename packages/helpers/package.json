@@ -6,7 +6,8 @@
   "module": "./dist/esm/index.esm.js",
   "types": "./dist/types/index.d.ts",
   "scripts": {
-    "build": "rimraf ./dist && rollup -c ./rollup.config.js"
+    "build": "rimraf ./dist && rollup -c ./rollup.config.js && npx typedoc",
+    "doc": "npx typedoc "
   },
   "files": [
     "dist"
@@ -28,6 +29,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "b1681f30fde32001b452ec6a7bb7716660e9c5db",
+  "gitHead": "9f18ec75dbd5d05809fc6441b1bf4ebd9b8a599a",
   "sideEffect": false
 }
